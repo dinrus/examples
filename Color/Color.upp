@@ -1,0 +1,12 @@
+description "Рисует текст разными цветами\377";
+
+uses
+	CtrlLib;
+
+file
+	Color.h,
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

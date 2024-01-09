@@ -1,0 +1,46 @@
+LAYOUT(GeoFunLayout, 680, 484)
+	ITEM(MenuBar, menu, LeftPosZ(4, 536).TopPosZ(4, 20))
+END_LAYOUT
+
+LAYOUT(InputLayout, 150, 472)
+	ITEM(Upp::EditDoubleSpin, edBaseCircleRad, SetInc(5).AlignRight(true).LeftPosZ(84, 60).TopPosZ(16, 19))
+	ITEM(Upp::EditDoubleSpin, edArmLength, SetInc(5).AlignRight(true).LeftPosZ(84, 60).TopPosZ(36, 19))
+	ITEM(Upp::EditIntSpin, edValP, AlignRight(true).LeftPosZ(84, 60).TopPosZ(56, 19))
+	ITEM(Upp::EditIntSpin, edValQ, AlignRight(true).LeftPosZ(84, 60).TopPosZ(76, 19))
+	ITEM(Upp::EditIntSpin, edPenWidth, AlignRight(true).LeftPosZ(84, 60).TopPosZ(96, 19))
+	ITEM(Upp::Switch, CurveType, SetLabel(t_("Эпициклоид\nГипоциклоид\nЭпитрохоид\nГипотрохоид")).LeftPosZ(8, 128).TopPosZ(264, 64))
+	ITEM(Upp::LabelBox, InputData, SetLabel(t_("Ввод Данных")).LeftPosZ(4, 144).TopPosZ(0, 332))
+	ITEM(Upp::Option, optZoom, SetLabel(t_("Растянуть")).LeftPosZ(12, 124).TopPosZ(224, 16))
+	ITEM(Upp::Option, optGradient, SetLabel(t_("Градиентная Заливка")).LeftPosZ(12, 124).TopPosZ(208, 16))
+	ITEM(Upp::Option, optColorFill, SetLabel(t_("Цветная Заливка")).LeftPosZ(12, 124).TopPosZ(192, 16))
+	ITEM(Upp::ColorPusher, LineColor, LeftPosZ(84, 28).TopPosZ(124, 16))
+	ITEM(Upp::ColorPusher, FillColorM1, LeftPosZ(84, 28).TopPosZ(144, 16))
+	ITEM(Upp::ColorPusher, FillColorM2, HSizePosZ(112, 10).TopPosZ(144, 16))
+	ITEM(Upp::ColorPusher, FillColorB1, LeftPosZ(84, 28).TopPosZ(168, 16))
+	ITEM(Upp::ColorPusher, FillColorB2, HSizePosZ(112, 10).TopPosZ(168, 16))
+	ITEM(Upp::Label, dv___15, SetLabel(t_("Фоновая Заливки")).SetAlign(ALIGN_RIGHT).LeftPosZ(0, 76).TopPosZ(164, 20))
+	ITEM(Upp::Label, dv___16, SetLabel(t_("Основная Заливки")).SetAlign(ALIGN_RIGHT).LeftPosZ(0, 80).TopPosZ(144, 16))
+	ITEM(Upp::Label, dv___17, SetLabel(t_("Тип Кривой")).SetFont(Upp::StdFont().Bold()).LeftPosZ(8, 128).TopPosZ(240, 18))
+	ITEM(Upp::Label, dv___18, SetLabel(t_("Цвет Линии")).SetAlign(ALIGN_RIGHT).LeftPosZ(0, 76).TopPosZ(124, 16))
+	ITEM(Upp::Label, dv___19, SetLabel(t_("Точки Вершин")).SetAlign(ALIGN_RIGHT).LeftPosZ(0, 76).TopPosZ(72, 26))
+	ITEM(Upp::Label, dv___20, SetLabel(t_("Радиус Черчения")).SetAlign(ALIGN_RIGHT).LeftPosZ(0, 76).TopPosZ(32, 26))
+	ITEM(Upp::Label, dv___21, SetLabel(t_("Обращения")).SetAlign(ALIGN_RIGHT).LeftPosZ(0, 76).TopPosZ(52, 26))
+	ITEM(Upp::Label, dv___22, SetLabel(t_("Базовый Радиус")).SetAlign(ALIGN_RIGHT).LeftPosZ(8, 68).TopPosZ(12, 26))
+	ITEM(Upp::Label, dv___23, SetLabel(t_("Ширина")).SetAlign(ALIGN_RIGHT).LeftPosZ(0, 76).TopPosZ(96, 20))
+	ITEM(Upp::EditIntSpin, edAnimSpeed, LeftPosZ(84, 44).TopPosZ(416, 28))
+	ITEM(Upp::Label, dv___25, SetLabel(t_("Анимация\nСкорость")).SetAlign(ALIGN_RIGHT).LeftPosZ(0, 76).TopPosZ(416, 28))
+	ITEM(Upp::Label, RollingRad, SetLabel(t_("Радиус Вращения")).LeftPosZ(4, 140).TopPosZ(448, 20))
+	ITEM(Upp::Button, btnImg, SetLabel(t_("Сохранить как Рисунок")).HSizePosZ(4, 6).TopPosZ(360, 24))
+	ITEM(Upp::Button, btnPrint, SetLabel(t_("Печать")).HSizePosZ(4, 6).TopPosZ(388, 24))
+	ITEM(Upp::Button, btnShowAnimation, SetLabel(t_("Анимированный Чертёж")).HSizePosZ(4, 6).TopPosZ(332, 24))
+END_LAYOUT
+
+LAYOUT(HelpDialogLayout, 400, 200)
+END_LAYOUT
+
+LAYOUT(AboutLayout, 480, 320)
+	ITEM(Upp::LabelBox, dv___0, SetLabel(t_("GeoFun")).HSizePosZ(4, 4).VSizePosZ(4, 24))
+	ITEM(Upp::RichTextCtrl, AboutText, HSizePosZ(8, 8).VSizePosZ(20, 28))
+	ITEM(Upp::Button, ok, SetLabel(t_("OK")).LeftPosZ(8, 464).TopPosZ(300, 15))
+END_LAYOUT
+

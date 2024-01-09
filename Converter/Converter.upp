@@ -1,0 +1,12 @@
+description "Конвертирует метрические единицы и единицы США (метры / футы и .т.п.)\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp charset "UTF-8",
+	converter.lay;
+
+mainconfig
+	"" = "GUI";
+

@@ -1,0 +1,13 @@
+description "Приложение-Адресная Книга, использует XML для хранения данных (SAX-образные классы U++)\377";
+
+uses
+	CtrlLib,
+	Report;
+
+file
+	AddressBook.cpp,
+	AddressBook.lay;
+
+mainconfig
+	"" = "GUI";
+

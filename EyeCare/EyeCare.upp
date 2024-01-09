@@ -1,0 +1,18 @@
+description "Приложение в трее, напоминающее пользователю о том, что нужно беречь зрение\377";
+
+tabsize 4;
+
+uses
+	CtrlLib;
+
+file
+	EyeCare.h,
+	EyeCare.cpp,
+	icon.rc,
+	EyeCare.lay,
+	EyeCare.iml,
+	app.tpp;
+
+mainconfig
+	"" = "GUI";
+
